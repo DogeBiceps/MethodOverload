@@ -5,17 +5,17 @@ using UnityEngine;
 
 public class WeeklyPlanSwitch : MonoBehaviour
 {
-    static void Main()
+    void WeeklyPlan()
     {
         string[] daysOfWeek = { "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday" };
 
         foreach (string day in daysOfWeek)
         {
-            PrintActivityUsingSwitch(day);
+            SwitchPrint(day);
         }
     }
 
-    static void PrintActivityUsingSwitch(string day)
+    void SwitchPrint(string day)
     {
         switch (day)
         {
@@ -41,7 +41,7 @@ public class WeeklyPlanSwitch : MonoBehaviour
                 Console.WriteLine("Sunday: Relax");
                 break;
             default:
-                Console.WriteLine("Invalid day.");
+                Console.WriteLine("Not a day");
                 break;
         }
     }

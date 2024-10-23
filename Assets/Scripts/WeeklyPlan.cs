@@ -7,17 +7,17 @@ public class WeeklyPlan : MonoBehaviour
 {
 
     //if else version of the weekly plan.
-    static void Main()
+    void WeeklyPlanner()
     {
         string[] daysOfWeek = { "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday" };
 
         foreach (string day in daysOfWeek)
         {
-            PrintActivityUsingIfElse(day);
+            IfElsePrint(day);
         }
     }
 
-    static void PrintActivityUsingIfElse(string day)
+    void IfElsePrint(string day)
     {
         if (day == "Monday")
         {
@@ -49,7 +49,7 @@ public class WeeklyPlan : MonoBehaviour
         }
         else
         {
-            Console.WriteLine("Invalid day.");
+            Console.WriteLine("Not a day");
         }
     }
 }
